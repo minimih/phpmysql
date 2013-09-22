@@ -1,0 +1,103 @@
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear:both;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	line-height: 24px;
+	background-color: #A0C3D5;
+}
+
+body > header {
+	background-color: #BC360A;
+}
+
+body > footer {
+	margin-bottom: 5px;
+	background-color: #FFAAAA;
+}
+
+h1, h2, h3 {
+	font-family: 'Oleo Script Swash Caps', Arial, Helvetica, sans-serif;
+	font-weight: 700;
+	font-size: 20px;
+	padding: 15px 0;
+}
+
+h2 {
+	font-size: 18px;
+}
+
+h3 {
+	font-size: 16px;
+}
+
+nav {
+	position: absolute;
+	margin-top: 5px;
+	top: 0;
+	right: 0;
+}
+
+nav li {
+	float: left;
+	margin: 5px;
+}
+
+a, a:link, a:visited, a:active, a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+
+#contentWrapper {
+	
+}
+
+article {
+	overflow: hidden;
+	width: 74%;
+	float: left;
+	margin-right: 5px;
+	padding-bottom: 5px;
+	background-color: #F0F0B8;
+}
+
+aside {
+	width: 24%;
+	float: left;
+}
+
+section {
+	padding: 15px 0;
+	margin-bottom: 5px;
+}
+
+/*Button*/
+.css3button {
+	font-size: 14px;
+	color: #666666;
+	padding: 10px 20px;
+	background: -moz-linear-gradient(
+	top,
+	#d7d9db 0%,
+	#b3b3b3);
+	background: -webkit-gradient(
+	linear, left top, left bottom,
+	from(#d7d9db),
+	to(#b3b3b3));
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	border: 0px solid #ffffff;
+	-moz-box-shadow: 0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.5);
+	-webkit-box-shadow: 0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.5);
+	box-shadow: 0px 1px 1px rgba(000,000,000,0.5), inset 0px 0px 1px rgba(255,255,255,0.5);
+	text-shadow: 0px 0px 0px rgba(000,000,000,0), 0px 0px 0px rgba(255,255,255,0);
+}
