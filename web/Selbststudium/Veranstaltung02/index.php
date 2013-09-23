@@ -7,7 +7,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
 		<!-- Styles -->
-		<link href="/css/reset.css" rel="StyleSheet" type="text/css" media="screen">
+		<link href="css/reset.css" rel="StyleSheet" type="text/css" media="screen">
 		<!--[if lt IE 7]><link href="" rel="StyleSheet" type="text/css" media="screen"><![endif]-->
 
         <link href='http://fonts.googleapis.com/css?family=Oleo+Script+Swash+Caps:700' rel='stylesheet' type='text/css'>
