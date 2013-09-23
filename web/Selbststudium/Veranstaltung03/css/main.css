@@ -41,7 +41,7 @@ h3 {
 /*formular*/
 
 label {
-	width: 140px;
+	width: 150px;
 	display: inline-block;
 }
 
@@ -52,17 +52,21 @@ input, textarea {
 	padding: 2px;
 }
 
-div.formAddress input {
-	width: 190px;
+div.formEmail input {
+	width: 360px;
 }
 
-div.formAddress textarea {
-	width: 196px;
+div.formEmail textarea {
+	width: 360px;
+}
+
+div.formButtons {
+	padding-left: 155px;
 }
 
 div.formButtons input {
-	width: 165px;
-	margin-right: 6px;
+	width: 175px;
+	margin-right: 10px;
 }
 
 /*Button*/
