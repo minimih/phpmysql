@@ -2,7 +2,7 @@
 error_reporting(E_ALL);
 ini_set("display_errors", 1);
 
-require_once('lib/recaptchalib.php');
+require_once($_SERVER['DOCUMENT_ROOT'].'/lib/recaptchalib.php');
 $privatekey = "6LfZH-gSAAAAACBjnvDg8VEzYkY-j0LVC2IaKavM";
 $resp = recaptcha_check_answer ($privatekey,
                                 $_SERVER["REMOTE_ADDR"],
