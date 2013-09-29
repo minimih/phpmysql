@@ -1,7 +1,7 @@
 <?php 
-    $form_email = $_POST['email'];
-    $form_subject = $_POST['subject'];
-    $form_message = $_POST['message'];
+    $form_email = htmlspecialchars($_POST['email']);
+    $form_subject = htmlspecialchars($_POST['subject']);
+    $form_message = htmlspecialchars($_POST['message']);
     
     //MAIL HEADERS
     $to = $form_email;
