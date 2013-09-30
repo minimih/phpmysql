@@ -11,8 +11,13 @@
 		<link rel="stylesheet" href="css/style.css" media="screen">
 
 		<!-- JavaScript -->
-		<script src="/lib/jquery/jquery-2.0.3.min.js"></script>
-		<!-- <script src="/lib/bootstrap/js/bootstrap.min.js"></script> -->
+		<script src="/lib/js/jquery/jquery-2.0.3.min.js"></script>
+
+        <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!--[if lt IE 9]>
+        <script src="/lib/js/html5shiv.js"></script>
+        <script src="/lib/js/respond.min.js"></script>
+        <![endif]-->
 
 		<script type="text/javascript">
 			var RecaptchaOptions = {
@@ -104,7 +109,7 @@
 					<div class="form-group">
 						<label class="col-lg-2" for="website">Website</label>
 						<div class="col-lg-5">
-							<input id="website" name="website" type="url" placeholder="www.example.com" class="form-control" required>
+							<input id="website" name="website" type="url" placeholder="http://example.com" class="form-control" required>
 						</div>
 					</div>
 
@@ -112,7 +117,7 @@
 						<label class="col-lg-2" for="tel">Telephone</label>
 						<div class="col-lg-5">
 							<div class="input-append">
-								<input id="tel" name="tel" type="tel" placeholder="+41 00000000" class="form-control" required>
+								<input id="tel" name="tel" type="tel" placeholder="+41223334455" class="form-control" required>
 								<div class="checkbox">
 									<label>
 										<input id="callback" name="callback" value="Yes" type="checkbox">
@@ -128,9 +133,9 @@
 						<label class="col-lg-2" for="bugtype">Type</label>
 						<div class="col-lg-5">
 							<select id="bugtype" name="bugtype" class="form-control" required>
-								<option value="1">Bug</option>
-								<option value="2">Feature</option>
-								<option value="3">Change</option>
+								<option value="Bug">Bug</option>
+								<option value="Feature">Feature</option>
+								<option value="Change">Change</option>
 							</select>
 						</div>
 					</div>
@@ -183,7 +188,7 @@
 						<label class="col-lg-2" for="captcha">Captcha</label>
 						<div class="col-lg-5">
 							<?php
-                            require_once ($_SERVER['DOCUMENT_ROOT'] . '/lib/recaptchalib.php');
+                            require_once ($_SERVER['DOCUMENT_ROOT'] . '/lib/php/rechapcha/recaptchalib.php');
 
                             // Get a key from https://www.google.com/recaptcha/admin/create
                             $publickey = "6LfZH-gSAAAAANljNYU3IW0fBWt1kgPnwY1GNF_B";

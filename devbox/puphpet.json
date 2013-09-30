@@ -5,12 +5,12 @@
         "local": {
             "url": "http:\/\/files.vagrantup.com\/precise64.box",
             "name": "precise64",
-            "personal_name": "php-web-dev",
+            "personal_name": "webdev",
             "ip": "192.168.56.101",
             "memory": "1024",
             "port_forward": {
-                "host": "",
-                "guest": ""
+                "host": "8080",
+                "guest": "80"
             },
             "foldertype": "default",
             "synced_folder": {
@@ -60,7 +60,7 @@
         ],
         "vhosts": {
             "1": {
-                "servername": "web.dev",
+                "servername": "webdev",
                 "serveraliases": "",
                 "docroot": "\/var\/www\/",
                 "port": "80",
@@ -95,8 +95,8 @@
                 "php5-intl",
                 "php5-mcrypt",
                 "php5-sqlite",
-                "php5-xcache",
-                "php5-xsl"
+                "php5-xsl",
+                "php-net-imap"
             ],
             "xdebug": {
                 "installed": "1"
@@ -122,9 +122,9 @@
                 "privileges": [
                     "ALL"
                 ],
-                "user": "devuser",
+                "user": "webapp",
                 "password": "<REMOVED>",
-                "dbname": "web_dev",
+                "dbname": "webapp",
                 "host": "localhost",
                 "sql": ""
             }

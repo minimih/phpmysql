@@ -41,8 +41,8 @@ apache::module { 'ssl': }
 apache::module { 'suexec': }
 apache::module { 'vhost_alias': }
 
-apache::vhost { 'web.dev':
-  server_name   => 'web.dev',
+apache::vhost { 'webdev':
+  server_name   => 'webdev',
   serveraliases => [
 ],
   docroot       => '/var/www/',
@@ -67,8 +67,8 @@ php::module { 'php5-imap': }
 php::module { 'php5-intl': }
 php::module { 'php5-mcrypt': }
 php::module { 'php5-sqlite': }
-php::module { 'php5-xcache': }
 php::module { 'php5-xsl': }
+php::module { 'php-net-imap': }
 
 class { 'php::devel':
   require => Class['php'],
@@ -118,15 +118,15 @@ puphpet::ini { 'custom':
 
 
 class { 'mysql::server':
-  config_hash   => { 'root_password' => 'password' }
+  config_hash   => { 'root_password' => 'passw0rd' }
 }
 
-mysql::db { 'web_dev':
+mysql::db { 'webapp':
   grant    => [
     'ALL'
   ],
-  user     => 'devuser',
-  password => 'password',
+  user     => 'webapp',
+  password => 'passw0rd',
   host     => 'localhost',
   charset  => 'utf8',
   require  => Class['mysql::server'],
@@ -142,11 +142,5 @@ apache::vhost { 'phpmyadmin':
   port        => 80,
   priority    => '10',
   require     => Class['phpmyadmin'],
-}
-
-class { 'wordpress':
-       wordpress_db_name =>      "wordpress",
-       wordpress_db_user =>      "wordpress",
-       wordpress_db_password =>  "password"
 }
 
