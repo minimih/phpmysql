@@ -63,6 +63,7 @@ if (!$resp->is_valid) {
     }
     
     //fileupload
+    //funktioniert noch nicht.
     /*
     $uploaddir = '/uploads/';
     $uploadfile = $uploaddir.$_FILES['upload']['name'];
