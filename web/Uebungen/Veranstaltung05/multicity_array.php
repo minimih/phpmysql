@@ -1,3 +1,5 @@
+<!DOCTYPE HTML>
+
 <?php
 $multiCity = array(
     array('City', 'Country', 'Continent'),
@@ -23,8 +25,9 @@ function filterByValue ($array, $index, $value){
                 $newarray[$key] = $array[$key];
             }
         }
-      }
-  return $newarray;
+    }
+    
+    return $newarray;
 }
 
 function filterMultidArray( $array, $row, $value ) {
