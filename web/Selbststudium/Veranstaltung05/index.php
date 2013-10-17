@@ -10,12 +10,12 @@
 		<link rel="stylesheet" href="css/style.css" media="screen">
 
 		<!-- JavaScript -->
-		<script src="/lib/js/jquery/jquery-2.0.3.min.js"></script>
+		<script src="../../lib/js/jquery/jquery-2.0.3.min.js"></script>
 
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
-		<script src="/lib/js/html5shiv.js"></script>
-		<script src="/lib/js/respond.min.js"></script>
+		<script src="../../lib/js/html5shiv.js"></script>
+		<script src="../../lib/js/respond.min.js"></script>
 		<![endif]-->
 
 	</head>
