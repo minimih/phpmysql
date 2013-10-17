@@ -21,7 +21,7 @@ function connect(){
 function getAllItems(){
     $conn = connect();
     try {
-        $stmt = $conn->prepare('SELECT * FROM todos ORDER BY completed, id');
+        $stmt = $conn->prepare('SELECT * FROM todos ORDER BY completed, id DESC');
         $stmt->execute();
         
         return $stmt->fetchAll();
@@ -30,13 +30,37 @@ function getAllItems(){
     }
 }
 
+function getActiveItems(){
+   $conn = connect();
+    try {
+        $stmt = $conn->prepare('SELECT * FROM todos WHERE completed = false ORDER BY id DESC');
+        $stmt->execute();
+        
+        return $stmt->fetchAll();
+    } catch(PDOException $e) {
+        exit('Error: '.$e->getMessage().'</br>');
+    } 
+}
+
+function getCompletedItems(){
+   $conn = connect();
+    try {
+        $stmt = $conn->prepare('SELECT * FROM todos WHERE completed = true ORDER BY id DESC');
+        $stmt->execute();
+        
+        return $stmt->fetchAll();
+    } catch(PDOException $e) {
+        exit('Error: '.$e->getMessage().'</br>');
+    } 
+}
+
 function getItem($id){
     $conn = connect();
     try {
         $stmt = $conn->prepare('SELECT * FROM todos WHERE id = :id');
         $stmt->execute(array(
-            'id' => $id)
-        );
+            'id' => $id
+        ));
      
         return $stmt->fetchAll();
     } catch(PDOException $e) {
@@ -61,20 +85,6 @@ function addItem($title, $completed = false){
     }    
 }
 
-function updateItem($id, $title, $completed){
-    $conn = connect();
-    try {
-        $stmt = $conn->prepare('UPDATE todos SET title=:title, completed=:completed WHERE id = :id');
-        $stmt->execute(array(
-            ':id' => $id,
-            ':title' => $title,
-            ':completed' => $completed
-        ));
-    } catch(PDOException $e) {
-        exit('Error: '.$e->getMessage().'</br>');
-    }
-}
-
 function deleteItem($id){
     $conn = connect();
     try {
@@ -85,5 +95,31 @@ function deleteItem($id){
     } catch(PDOException $e) {
         exit('Error: '.$e->getMessage().'</br>');
     }    
+}
+
+function editItemTitle($id, $title){
+    $conn = connect();
+    try {
+        $stmt = $conn->prepare('UPDATE todos SET title=:title WHERE id = :id');
+        $stmt->execute(array(
+            ':id' => $id,
+            ':title' => $title,
+        ));
+    } catch(PDOException $e) {
+        exit('Error: '.$e->getMessage().'</br>');
+    }
+}
+
+function editItemStatus($id, $completed){
+    $conn = connect();
+    try {
+        $stmt = $conn->prepare('UPDATE todos SET completed=:completed WHERE id = :id');
+        $stmt->execute(array(
+            ':id' => $id,
+            ':completed' => $completed
+        ));
+    } catch(PDOException $e) {
+        exit('Error: '.$e->getMessage().'</br>');
+    }
 }
 ?>
