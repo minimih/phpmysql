@@ -2,7 +2,7 @@
 function connect(){
     $host='localhost';
     $dbname='todo_app';
-    $username='todo';
+    $username='loc_todo';
     $password='nFVUCj9T2D4X6pbP';
     
     try{

@@ -7,9 +7,10 @@
     </head>
 <body>
     <?php
+        session_start();
+
         error_reporting(E_ALL);
         ini_set("display_errors", 1);
-        
         
         function find_all_files($dir)
         {
@@ -25,8 +26,6 @@
             }
             return $result;
         }
-        
-        session_start();
         
         $loggedin = false;
         if(isset($_SESSION['loggedin'])){

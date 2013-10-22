@@ -7,10 +7,10 @@
     </head>
 <body>
     <?php
+        session_start();
+
         error_reporting(E_ALL);
         ini_set("display_errors", 1);
-        
-        session_start();
         
         if(sizeof($_POST) > 0)
         {

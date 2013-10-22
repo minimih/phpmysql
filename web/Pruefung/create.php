@@ -7,13 +7,13 @@
     </head>
 <body>
     <?php
+        session_start();
+
         error_reporting(E_ALL);
         ini_set("display_errors", 1);
         
         // Suppress DateTime warnings
         date_default_timezone_set(@date_default_timezone_get());
-        
-        session_start();
         
         $loggedin = false;
         if(isset($_SESSION['loggedin'])){
@@ -38,11 +38,12 @@
                 );
                 
                 //save article
-                
                 $filedate = date("Ymd_His");
                 
                 $uploaddir = "posts/";
-                mkdir($uploaddir, 0644);
+                if(!file_exists($uploaddir)){
+                    mkdir($uploaddir, 0644);
+                }
                 
                 file_put_contents("posts/article-$filedate.bin",serialize($article));
                 
