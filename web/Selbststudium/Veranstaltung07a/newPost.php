@@ -1,6 +1,6 @@
 <?php
 require_once 'includes/head.inc.php';
-require_once 'database/postGateway.inc.php';
+require_once 'php-classes/Post.php';
 
 if(sizeof($_POST) > 0){
     if(isset($_POST['title']) && isset($_POST['content'])){
@@ -8,9 +8,11 @@ if(sizeof($_POST) > 0){
         $content = trim(htmlspecialchars($_POST['content']));
         
         if (!empty($title) && !empty($content)) {
-            $gw = new PostGateway();
-            $gw->insert($title, $content);
-    
+            $post = new Post();
+            $post->setTitle($title);
+            $post->setContent($content);
+            
+            $post->insert();
             header("Location: ./");
         }else{
             echo '<div class="alert alert-danger"><strong>Error!</strong> Blog post title and content must not be empty</div>';
