@@ -3,12 +3,12 @@ require_once 'Mensch.php';
 
 class Schweizer extends Mensch {
     
-    public function __construct(){
-        
+    public function __construct($name, $geschlecht){
+        parent::__construct($name, $geschlecht);
     }
 
     public function umbenennen($value){
-        Mensch::umbenennen($value);
+        parent::umbenennen($value);
         
         $this->behoerdengang();
     }
