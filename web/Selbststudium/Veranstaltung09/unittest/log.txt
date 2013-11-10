@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites>
+  <testsuite name="StackTest" file="/var/www/Selbststudium/Veranstaltung09/unittest/StackTest.php" tests="1" assertions="5" failures="0" errors="0" time="0.004099">
+    <testcase name="testPushAndPop" class="StackTest" file="/var/www/Selbststudium/Veranstaltung09/unittest/StackTest.php" line="4" assertions="5" time="0.004099"/>
+  </testsuite>
+</testsuites>
