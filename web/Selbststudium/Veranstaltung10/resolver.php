@@ -6,4 +6,3 @@ require_once 'config.php';
 require_once 'api/ApiProvider.php';
 
 $apiProvider = new ApiProvider();
-?>
