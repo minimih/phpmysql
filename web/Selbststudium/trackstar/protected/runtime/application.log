@@ -1063,3 +1063,196 @@ Stack trace:
 REQUEST_URI=/Uebungen/trackstar/index.php?r=issue/create
 HTTP_REFERER=http://webdev/Uebungen/trackstar/index.php?r=issue/index&pid=1
 ---
+2013/12/02 22:50:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "issue".' in /var/www/web/yii/framework/web/CController.php:483
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(270): CController->missingAction('issue')
+#1 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('issue')
+#2 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/issue')
+#3 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#4 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=site/issue
+---
+2013/12/03 18:58:12 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested view "index" was not found.' in /var/www/web/yii/framework/web/actions/CViewAction.php:112
+Stack trace:
+#0 /var/www/web/yii/framework/web/actions/CViewAction.php(123): CViewAction->resolveView('index')
+#1 /var/www/web/yii/framework/web/actions/CAction.php(76): CViewAction->run()
+#2 /var/www/web/yii/framework/web/CController.php(308): CAction->runWithParams(Array)
+#3 /var/www/web/yii/framework/web/CController.php(286): CController->runAction(Object(CViewAction))
+#4 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CViewAction), Array)
+#5 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('page')
+#6 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('site/page')
+#7 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#8 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=site/page&view=
+---
+2013/12/03 18:58:27 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=project/view
+---
+2013/12/03 18:58:39 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=project/view
+---
+2013/12/03 18:58:42 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=project/view
+---
+2013/12/03 18:58:44 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('project/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=project/view
+---
+2013/12/03 19:12:19 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You must specify a project before performing this action.' in /var/www/web/Selbststudium/trackstar/protected/controllers/IssueController.php:220
+Stack trace:
+#0 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=issue/index
+---
+2013/12/03 19:12:38 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=issue/view
+---
+2013/12/03 19:13:34 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in /var/www/web/yii/framework/web/CController.php:336
+Stack trace:
+#0 /var/www/web/yii/framework/web/CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/view')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=issue/view
+---
+2013/12/03 19:13:35 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You must specify a project before performing this action.' in /var/www/web/Selbststudium/trackstar/protected/controllers/IssueController.php:220
+Stack trace:
+#0 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): IssueController->filterProjectContext(Object(CFilterChain))
+#1 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#2 /var/www/web/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#3 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#6 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#7 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('index')
+#9 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('issue/index')
+#10 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#11 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=issue/index
+---
+2013/12/03 21:14:23 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/web/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/web/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/web/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=user/admin
+HTTP_REFERER=http://webdev/web/Selbststudium/trackstar/index.php?r=site/login
+---
+2013/12/03 21:15:48 [error] [exception.CHttpException.403] exception 'CHttpException' with message 'You are not authorized to perform this action.' in /var/www/web/yii/framework/web/auth/CAccessControlFilter.php:182
+Stack trace:
+#0 /var/www/web/yii/framework/web/auth/CAccessControlFilter.php(145): CAccessControlFilter->accessDenied(Object(CWebUser), 'You are not aut...')
+#1 /var/www/web/yii/framework/web/filters/CFilter.php(38): CAccessControlFilter->preFilter(Object(CFilterChain))
+#2 /var/www/web/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#3 /var/www/web/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#4 /var/www/web/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#5 /var/www/web/yii/framework/web/CController.php(291): CFilterChain->run()
+#6 /var/www/web/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 /var/www/web/yii/framework/web/CWebApplication.php(282): CController->run('admin')
+#8 /var/www/web/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('user/admin')
+#9 /var/www/web/yii/framework/base/CApplication.php(180): CWebApplication->processRequest()
+#10 /var/www/web/Selbststudium/trackstar/index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/web/Selbststudium/trackstar/index.php?r=user/admin
+---
